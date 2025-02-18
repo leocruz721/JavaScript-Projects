@@ -13,4 +13,8 @@ var greeting = "Hello";
 var name = "Alice";
 var message = greeting + ", " + name + "! Welcome to my website.";
 document.write(message);
+var greeting = "Hello", name = "Charlie", message = "Welcome to my site!";
+document.write(name);
+var result = 5 + 10;
+document.write(result);
 
