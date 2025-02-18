@@ -1,1 +1,2 @@
-alert("Hello, this is the alert from the external file!");
+window.alert("Hello, this is the alert from window.alert()!");
+
