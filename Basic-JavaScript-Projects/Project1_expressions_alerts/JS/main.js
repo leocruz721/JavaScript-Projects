@@ -6,4 +6,11 @@ var message = "Hello, Welcome!";
 window.alert(message);
 var message = "He said, \"It's a beautiful day!\"";
 window.alert(message);
+var greeting = "Hello";
+var name = "John";
+document.write(greeting + ", " + name + "! Welcome to my website.");
+var greeting = "Hello";
+var name = "Alice";
+var message = greeting + ", " + name + "! Welcome to my website.";
+document.write(message);
 
