@@ -16,8 +16,8 @@ var name = "Alice";
 var message = greeting + ", " + name + "! Welcome to my website.";
 // Use document.write() to display the concatenated string in the browser
 document.write(message);
-var greeting = "Hello", name = "Charlie", message = "Welcome to my site!";
-document.write(name);
-var result = 5 + 10;
-document.write(result);
+var greeting = "Hello", name = "Charlie", message = "Welcome to my site!"; // Assign multiple variables in one statement
+document.write(name); // Use document.write() to display the 'name' variable
+var result = 5 + 10; // Write an expression (addition)
+document.write(result); // Use document.write() to display the result of the expression
 
