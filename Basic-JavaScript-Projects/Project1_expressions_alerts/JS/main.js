@@ -1,4 +1,1 @@
-<script>
-        // JavaScript alert method
-        alert("Hello, welcome to the site!");
-</script>
+alert("Hello, this is the alert from the external file!");
