@@ -10,3 +10,13 @@ function changeText() {
     // Use document.getElementById to change the text of the paragraph with id "output"
     document.getElementById("output").innerHTML = message;
 }
+
+// Get the element by its ID
+let element = document.getElementById("output");
+
+// Initialize the string and concatenate
+let message = "Hello, ";
+message += "world! This is concatenated text.";
+
+// Set the concatenated string as the content of the element
+element.innerText = message;
