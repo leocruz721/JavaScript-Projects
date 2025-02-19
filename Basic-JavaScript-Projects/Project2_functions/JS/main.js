@@ -16,3 +16,11 @@ function myFunction() {
     sentence += " a lot from this book!"; //using the += operator to add to the variable
     document.getElementById('Concatenate').innerHTML = sentence; //using document.getElementByID()
 }
+// Function to change the content of the div with the id "message"
+function changeMessage() {
+    // Get the element by its ID
+    let element = document.getElementById("message");
+    
+    // Change the content of the element
+    element.innerText = "Text has been changed using JavaScript!";
+}
