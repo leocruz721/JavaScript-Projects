@@ -11,12 +11,8 @@ function changeText() {
     document.getElementById("output").innerHTML = message;
 }
 
-// Get the element by its ID
-let element = document.getElementById("output");
-
-// Initialize the string and concatenate
-let message = "Hello, ";
-message += "world! This is concatenated text.";
-
-// Set the concatenated string as the content of the element
-element.innerText = message;
+function myFunction() {
+    var sentence = "I am learning";
+    sentence += " a lot from this book!";
+    document.getElementById('Concatenate').innerHTML = sentence;
+}
