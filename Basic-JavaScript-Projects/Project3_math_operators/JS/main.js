@@ -1,39 +1,63 @@
-function performMath() {
-    var addition = 2 + 2;  // Addition operation
-    var subtraction = 5 - 3;  // Subtraction operation
-    var multiplication = 6 * 3;  // Multiplication operation
-    var division = 12 / 4;  // Division operation
-    var modulus = 7 % 3;  // Modulus operation (remainder of 7 divided by 3)
+// Function to perform addition and display the result
+function performAddition() {
+    // Addition of two numbers
+    var result = 2 + 2;
+    // Displaying the result in the paragraph with id "additionResult"
+    document.getElementById("additionResult").innerHTML = "2 + 2 = " + result;
+}
 
-    var negationTrue = !true;  // Negation of true
-    var negationFalse = !false;  // Negation of false
-    var negationZero = !0;  // Negation of 0
-    var negationOne = !1;  // Negation of 1
+// Function to perform subtraction and display the result
+function performSubtraction() {
+    // Subtraction of two numbers
+    var result = 5 - 3;
+    // Displaying the result in the paragraph with id "subtractionResult"
+    document.getElementById("subtractionResult").innerHTML = "5 - 3 = " + result;
+}
 
-    // Using increment and decrement operators
-    var number = 5;  // Starting number
-    var incremented = number++;  // Post-increment: Increments after assignment
-    var decremented = number--;  // Post-decrement: Decrements after assignment
+// Function to perform multiplication and display the result
+function performMultiplication() {
+    // Multiplication of two numbers
+    var result = 6 * 3;
+    // Displaying the result in the paragraph with id "multiplicationResult"
+    document.getElementById("multiplicationResult").innerHTML = "6 * 3 = " + result;
+}
 
-    // Generate a random number between 0 and 1
+// Function to perform modulus (remainder of division) and display the result
+function performModulus() {
+    // Modulus operation to find the remainder of division
+    var result = 7 % 3; // Remainder when dividing 7 by 3
+    // Displaying the result in the paragraph with id "modulusResult"
+    document.getElementById("modulusResult").innerHTML = "7 % 3 = " + result;
+}
+
+// Function to perform increment and display the result
+function performIncrement() {
+    // Start with a number
+    var number = 5;
+    // Post-increment: the current value is used before the increment
+    var result = number++;
+    // Displaying the result in the paragraph with id "incrementResult"
+    document.getElementById("incrementResult").innerHTML = "Increment 5 (Post-increment): " + result;
+}
+
+// Function to perform decrement and display the result
+function performDecrement() {
+    // Start with a number
+    var number = 5;
+    // Post-decrement: the current value is used before the decrement
+    var result = number--;
+    // Displaying the result in the paragraph with id "decrementResult"
+    document.getElementById("decrementResult").innerHTML = "Decrement 5 (Post-decrement): " + result;
+}
+
+// Function to generate a random number and display it
+function performRandom() {
+    // Generating a random number between 0 and 1
     var randomNum = Math.random();
-
-    // Generate a random number between 1 and 100 (inclusive)
+    // Generating a random integer between 1 and 100
     var randomInRange = Math.floor(Math.random() * 100) + 1;
-
-    // Display all results in the paragraph with id "Math"
-    document.getElementById("Math").innerHTML = 
-        "2 + 2 = " + addition + "<br>" +  // Addition result
-        "5 - 3 = " + subtraction + "<br>" +  // Subtraction result
-        "6 * 3 = " + multiplication + "<br>" +  // Multiplication result
-        "12 / 4 = " + division + "<br>" +  // Division result
-        "7 % 3 = " + modulus + "<br>" +  // Modulus result
-        "!true = " + negationTrue + "<br>" +  // Negation of true
-        "!false = " + negationFalse + "<br>" +  // Negation of false
-        "!0 = " + negationZero + "<br>" +  // Negation of 0
-        "!1 = " + negationOne + "<br>" +  // Negation of 1
-        "Increment 5 (Post-increment): " + incremented + "<br>" +  // Post-increment result
-        "Decrement after increment (Post-decrement): " + decremented + "<br>" +  // Post-decrement result
-        "Random number between 0 and 1: " + randomNum.toFixed(4) + "<br>" +  // Random number between 0 and 1
-        "Random number between 1 and 100: " + randomInRange;  // Random number between 1 and 100
+    // Displaying the result in the paragraph with id "randomResult"
+    document.getElementById("randomResult").innerHTML = 
+        "Random number between 0 and 1: " + randomNum.toFixed(4) + "<br>" + 
+        "Random number between 1 and 100: " + randomInRange;
 }
