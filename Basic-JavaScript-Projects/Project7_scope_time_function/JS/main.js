@@ -12,3 +12,24 @@ function debugFunction() {
     // Intentional error: trying to log a non-existing variable `nonExistentVar`
     console.log(nonExistentVar); // This will throw an error because nonExistentVar is not defined
 }
+
+// Function to display a time-based message
+function displayTimeMessage() {
+    // Get the current hour using new Date().getHours()
+    let currentHour = new Date().getHours();
+
+    // Use an if statement to determine the message based on the time
+    let message = "";
+
+    if (currentHour < 12) {
+        message = "Good morning!";
+    } else if (currentHour < 18) {
+        message = "Good afternoon!";
+    } else {
+        message = "Good evening!";
+    }
+
+    // Use document.getElementById() to modify the content of the paragraph with id 'timeMessage'
+    document.getElementById("timeMessage").innerHTML = message;
+}
+
