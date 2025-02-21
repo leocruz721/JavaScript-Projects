@@ -55,3 +55,43 @@ function createCar() {
     // Display the car info in the HTML paragraph with id "result"
     document.getElementById("result").innerText = "Car Created: " + myCar.getCarInfo();
 }
+
+// Function to create a car instance using the new keyword
+function createCar() {
+    // Create a new instance of the Car class
+    const myCar = new Car("Toyota", "Corolla", 2020);
+
+    // Display the car info in the HTML paragraph with id "result"
+    document.getElementById("result").innerText = "Car Created: " + myCar.getCarInfo();
+}
+
+// This will cause a syntax error because `class` is a reserved word
+let className = "This will not throw an error"; 
+document.getElementById("output").innerText = className;  // This line will run without any errors
+
+// Outer function
+function Nested_Function(price, quantity) {
+    
+// Nested function to calculate the discount
+function applyDiscount(price) {
+    let discount = 0.1;  // 10% discount
+    return price - (price * discount);
+}
+
+// Apply discount using the nested function
+let discountedPrice = applyDiscount(price);
+
+// Calculate total price
+let totalPrice = discountedPrice * quantity;
+
+// Return the total price
+    return totalPrice;
+}
+
+// Call the outer function and display the result
+let price = 100;
+let quantity = 3;
+let total = Nested_Function(price, quantity);
+
+// Display the result in the console
+console.log(`Total Price: $${total}`);
