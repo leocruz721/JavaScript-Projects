@@ -55,3 +55,19 @@ function Age_Function() {
     }
     document.getElementById("How_old_are_you?").innerHTML = Vote;
 }
+
+// Function to check voting eligibility
+function checkVotingEligibility() {
+    // Get the age entered by the user
+    let age = document.getElementById("userAge").value;
+    
+    // Get the paragraph element to display the result
+    let resultMessage = document.getElementById("resultMessage");
+
+    // Check if the age is 18 or greater
+    if (age >= 18) {
+        resultMessage.innerHTML = "You are eligible to vote!";
+    } else {
+        resultMessage.innerHTML = "You are not old enough to vote.";
+    }
+}
