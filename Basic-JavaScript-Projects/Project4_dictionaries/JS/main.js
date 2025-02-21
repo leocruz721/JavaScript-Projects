@@ -9,5 +9,7 @@ function showDefinition() {
 
     // Accessing the dictionary and displaying the value of a specific key
     // For example, showing the definition of "apple"
+    delete myDictionary.car;
     document.getElementById("Dictionary").innerHTML = "The definition of 'apple': " + myDictionary["apple"];
 }
+
