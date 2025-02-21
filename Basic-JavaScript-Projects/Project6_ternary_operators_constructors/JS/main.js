@@ -32,3 +32,26 @@ function myFunction(){
     "Erik drives a " + Erik.Vehicle_Color + "-colored" + Erik.Vehicle_Model + 
     " manufacted in " + Erik.Vehicle_Year;
 }
+
+// Car class definition
+class Car {
+    constructor(make, model, year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+
+    // Method to display car info
+    getCarInfo() {
+        return `${this.year} ${this.make} ${this.model}`;
+    }
+}
+
+// Function to create a car instance using the new keyword
+function createCar() {
+    // Create a new instance of the Car class
+    const myCar = new Car("Toyota", "Corolla", 2020);
+
+    // Display the car info in the HTML paragraph with id "result"
+    document.getElementById("result").innerText = "Car Created: " + myCar.getCarInfo();
+}
