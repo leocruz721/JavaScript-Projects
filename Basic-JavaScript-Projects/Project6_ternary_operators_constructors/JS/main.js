@@ -29,6 +29,6 @@ var Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard");
 
 function myFunction(){
     document.getElementById("Keywords_and_Constructors").innerHTML = 
-    "Erik drives a " + Erik.Vehicle_Color +"-colored" + Erik.Vehicle_Model + 
-    "manufacted in " + Erik.Vehicle_Year;
+    "Erik drives a " + Erik.Vehicle_Color + "-colored" + Erik.Vehicle_Model + 
+    " manufacted in " + Erik.Vehicle_Year;
 }
