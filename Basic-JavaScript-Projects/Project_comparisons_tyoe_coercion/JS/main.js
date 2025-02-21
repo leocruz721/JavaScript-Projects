@@ -1,22 +1,33 @@
-// Example of type coercion
-let number = 5;  // A number
-let text = "The number is: ";  // A string
+//variable with a boolean data type
+var x = true;
 
-// Using the "+" operator to concatenate a string and a number (type coercion occurs here)
-let result = text + number;  // JavaScript coerces the number to a string
+//printing the data type of the variable x
+document.write(typeof x);
+document.write("<br>");
 
-// Output the result to the webpage
-document.write(result);  // "The number is: 5"
+//an expression combining a string and a number
+document.write("10" + 10);
+document.write("<br>");
 
-// Log the result to the console for debugging
-console.log(result);  // "The number is: 5"
+//utilizing the == operator
+document.write(5 == 5);
+document.write("<br>");
 
-// Another example of type coercion (numeric coercion)
-let number2 = "10";  // A string
-let result2 = number2 * 2;  // JavaScript coerces the string to a number before multiplication
+//utilizing the === operator
+x = 1;
+y = 2;
+document.write(x == y);
+document.write("<br>");
 
-// Output the result to the webpage
-document.write("<br>The result of multiplying string '10' by 2 is: " + result2);  // 20
+//utilizing the > and && operators
+document.write(10 > 5 && 11 > 6);
+document.write("<br>");
 
-// Log the result to the console for debugging
-console.log(result2);  // 20
+//utilizing the > and || operators
+document.write(10 > 5 || 11 > 6);
+document.write("<br>");
+
+function not_Function(){
+    document.getElementsById("output").innerhtml = !(1 > 2);
+}
+
