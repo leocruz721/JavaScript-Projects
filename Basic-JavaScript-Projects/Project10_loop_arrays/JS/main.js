@@ -10,3 +10,11 @@ function for_Loop() {
     // Display the result in the <p> tag with id "List_of_Instruments"
     document.getElementById("List_of_Instruments").innerHTML = result;
 }
+
+function array_Function() {
+    // Define an array with some values
+    const myArray = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
+
+    // Use innerHTML to display the array values in the <p> element with id "Array"
+    document.getElementById("Array").innerHTML = myArray.join(", ");
+}
