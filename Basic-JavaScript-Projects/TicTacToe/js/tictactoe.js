@@ -14,7 +14,7 @@ function placeXorO(squareNumber) {
         //This condition checks who's turn it is.
         if (activePlayer === 'X') {
             //If activePlayer is equal to 'X', the x.png is placed in HTML
-            select.style.backgroundImage = 'url("images/X.png")';
+            select.style.backgroundImage = 'url("images/X.jpg")';
             //Active player may only be 'X' or 'O' so, if not 'X' it must be 'O'
         } else {
             //If activePlayer is equal to 'O', the x.png is placed in HTML
@@ -65,4 +65,36 @@ function placeXorO(squareNumber) {
             };
         }
     }
+}
+
+function checkWinConditions() {
+    // X 0, 1, 2 condition.
+    if (arrayIncludes('0X', '1X', '2X')) { drawWinLine(50, 100, 558, 100) }
+    // X 3, 4, 5 condition
+    else if (arrayIncludes('3X', '4X', '5X')) { drawWinLine(50, 304, 558,304) }
+     // X 6, 7, 8 condition
+    else if (arrayIncludes('6X', '7X', '8X')) { drawWinLine(50, 508, 558,508) }
+    // X 0, 3, 6 condition
+    else if (arrayIncludes('0X', '3X', '6X')) { drawWinLine(100, 50, 100,558) }
+    // X 3, 4, 5 condition
+    else if (arrayIncludes('3X', '4X', '5X')) { drawWinLine(50, 304, 558,304) }
+    // X 1, 4, 5 condition
+    else if (arrayIncludes('3X', '4X', '5X')) { drawWinLine(50, 304, 558,304) }
+    // X 3, 4, 5 condition
+    else if (arrayIncludes('3X', '4X', '5X')) { drawWinLine(50, 304, 558,304) }
+    // X 3, 4, 5 condition
+    else if (arrayIncludes('3X', '4X', '5X')) { drawWinLine(50, 304, 558,304) }
+    // X 3, 4, 5 condition
+    else if (arrayIncludes('3X', '4X', '5X')) { drawWinLine(50, 304, 558,304) }
+    // X 3, 4, 5 condition
+    else if (arrayIncludes('3X', '4X', '5X')) { drawWinLine(50, 304, 558,304) }
+    // X 3, 4, 5 condition
+    else if (arrayIncludes('3X', '4X', '5X')) { drawWinLine(50, 304, 558,304) }
+    // X 3, 4, 5 condition
+    else if (arrayIncludes('3X', '4X', '5X')) { drawWinLine(50, 304, 558,304) }
+    // X 3, 4, 5 condition
+    else if (arrayIncludes('3X', '4X', '5X')) { drawWinLine(50, 304, 558,304) }
+    // X 3, 4, 5 condition
+    else if (arrayIncludes('3X', '4X', '5X')) { drawWinLine(50, 304, 558,304) }
+
 }
