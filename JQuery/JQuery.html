@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Click Event Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #changeColorButton {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #changeColorButton:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Web Page</h1>
+        <p>This page uses a jQuery click event to change the background color.</p>
+    </header>
+
+    <button id="changeColorButton">Click to Change Background Color</button>
+
+    <script>
+        // jQuery click event to change background color when the button is clicked
+        $(document).ready(function(){
+            $("#changeColorButton").click(function(){
+                $("body").css("background-color", "lightblue");
+            });
+        });
+    </script>
+
+</body>
+</html>
