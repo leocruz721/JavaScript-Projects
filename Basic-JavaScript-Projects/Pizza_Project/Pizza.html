@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Menu</title>
+    <link rel="stylesheet" href="Pizza_CSS/pizza.css">
+    <script src="Pizza_Javascript/Pizza.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Pizza Shop</h1>
+        <h2>Order Your Pizza</h2>
+        <div class="row">
+            <label for="size">Choose a size:</label>
+            <select id="size" onchange="calculateTotal()">
+                <option value="8">Small Pizza ($8)</option>
+                <option value="10">Small ($10)</option>
+                <option value="15">Medium ($15)</option>
+                <option value="20">Large ($20)</option>
+            </select>
+        </div>
+        <div class="row">
+            <h3>Meats ($2 each)</h3>
+            <div>
+                <input type="checkbox" class="topping" value="2" onchange="calculateTotal()"> Pepperoni<br>
+                <input type="checkbox" class="topping" value="2" onchange="calculateTotal()"> Sausage<br>
+                <input type="checkbox" class="topping" value="2" onchange="calculateTotal()"> Bacon<br>
+                <input type="checkbox" class="topping" value="2" onchange="calculateTotal()"> Salami<br>
+            </div>
+        </div>
+        <div class="row">
+            <h3>Vegetables ($1 each)</h3>
+            <div>
+                <input type="checkbox" class="topping" value="1" onchange="calculateTotal()"> Mushrooms<br>
+                <input type="checkbox" class="topping" value="1" onchange="calculateTotal()"> Onions<br>
+                <input type="checkbox" class="topping" value="1" onchange="calculateTotal()"> Tomatoes<br>
+                <input type="checkbox" class="topping" value="1" onchange="calculateTotal()"> Olives<br>
+                <input type="checkbox" class="topping" value="1" onchange="calculateTotal()"> Green Peppers<br>
+            </div>
+        </div>
+        <h3>Total: $<span id="total">8</span></h3>
+        <button onclick="placeOrder()">Order Now</button>
+    </div>
+
+</body>
+</html>
