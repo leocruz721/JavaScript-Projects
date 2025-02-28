@@ -11,9 +11,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0 auto;
     background-color: #f4f4f9;
-    max-width:  500px;
-
-
+    max-width: 500px;
     /* Flexbox layout to push the footer to the bottom */
     display: flex;
     flex-direction: column;
@@ -24,6 +22,10 @@ body {
     flex: 1;
     padding: 20px;
     margin-bottom: 50px; /* Give space for footer */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
 }
 
 h1 {
@@ -35,7 +37,8 @@ h1 {
     padding: 10px;
     font-size: 16px;
     margin-right: 10px;
-    width: 300px;
+    width: 100%; /* Use full width to take advantage of container size */
+    max-width: 300px; /* Ensure the input doesn’t stretch too wide */
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -56,11 +59,14 @@ h1 {
 
 hr {
     margin: 20px 0;
+    width: 100%; /* Ensure the line takes up full width */
+    max-width: 500px; /* Match the width of the content container */
 }
 
 #todos {
     list-style-type: none;
     padding-left: 0;
+    width: 100%;
 }
 
 .todo-item {
@@ -91,13 +97,15 @@ hr {
 
 /* Footer Styling */
 footer {
-    text-align: auto;
+    text-align: center;
     padding: 10px;
     background-color: #333;
     color: white;
+    border-top: 3px solid #ddd; /* Border for footer */
     margin-top: auto;
 }
 
+/* Styling for HTML */
 html {
     font-family: "Avenir Next", Arial, Helvetica, sans-serif;
     text-align: center;
@@ -105,19 +113,22 @@ html {
 
 input {
     padding-top: 30px;
-    width: 500px;
+    width: 100%;
+    max-width: 500px; /* Limit the width to 500px */
     height: 60px;
-    font-size: 40x;
-    border: 0;
+    font-size: 20px; /* Adjust font size */
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-    input.focus {
-        outline: none;
-    }
+input:focus {
+    outline: none; /* Remove default focus outline */
+}
 
 li {
     text-align: left;
-    font-size: 40px;
+    font-size: 20px;
     list-style: none;
     margin: 0;
+    width: 100%; /* Ensure the list items take full width */
 }
