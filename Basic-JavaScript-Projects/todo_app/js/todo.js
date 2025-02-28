@@ -81,3 +81,7 @@ function show () {
 }
 docoument.getElementById('add').addEventListener('click', add);
 show();
+
+function changeText() {
+    document.querySelector("p").innerHTML = "You double-clicked the paragraph! The text has changed.";
+}
