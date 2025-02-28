@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="css/todo.css">
-    </head>
-    <body>
-        <input id="task"><button id="add">Add Item</button>
-        <hr>
-        <div id="todos"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List with Footer</title>
+    <link rel="stylesheet" href="css/todo.css">
+</head>
+<body>
+    <h1>My To-Do List</h1>
 
-        <script src="js/todo.js"></script>
-    </body>
+    <input id="task" type="text" placeholder="Add a new task">
+    <button id="add">Add Item</button>
+    
+    <hr>
+    
+    <div id="todos"></div>
+
+    <footer>
+        <p>&copy; 2025 Your Name | All rights reserved</p>
+        <p>Date: <script>document.write(new Date().toLocaleDateString());</script></p>
+    </footer>
+    
+    <script src="js/todo.js"></script>
+</body>
 </html>
